@@ -97,7 +97,10 @@
     <string name="medium">You did well!</string>
     <string name="high">You did great!</string>
 
-    <!-- the submit button -->
+    <!-- the submit , button -->
     <string name="submit">Submit Answer</string>
+    <string name="answerButton">Show Correct Answers</string>
+    <string name="reset">Reset</string>
+
 
 </resources>

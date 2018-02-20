@@ -95,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
         /*
         This block of lines initiates instance variables for all the views.
@@ -302,8 +303,89 @@ public class MainActivity extends AppCompatActivity {
             toast.show();
         }
 
+        /*
+              the next block of lines resets all answers and points are given the value 0
+             */
         points = 0;
 
+        ifCheckedQ1A1.setChecked(false);
+        ifCheckedQ1A2.setChecked(false);
+        ifCheckedQ1A3.setChecked(false);
+        ifCheckedQ1A4.setChecked(false);
+
+        questionTwo.setText("");
+
+        ifCheckedQ3A1.setChecked(false);
+        ifCheckedQ3A2.setChecked(false);
+        ifCheckedQ3A3.setChecked(false);
+        ifCheckedQ3A4.setChecked(false);
+
+        ifCheckedQ4A1.setChecked(false);
+        ifCheckedQ4A2.setChecked(false);
+        ifCheckedQ4A3.setChecked(false);
+        ifCheckedQ4A4.setChecked(false);
+
+        questionFive.setText("");
+
+        ifCheckedQ6A1.setChecked(false);
+        ifCheckedQ6A2.setChecked(false);
+        ifCheckedQ6A3.setChecked(false);
+        ifCheckedQ6A4.setChecked(false);
+
+        ifCheckedQ7A1.setChecked(false);
+        ifCheckedQ7A2.setChecked(false);
+
+        ifCheckedQ8A1.setChecked(false);
+        ifCheckedQ8A2.setChecked(false);
+        ifCheckedQ8A3.setChecked(false);
+        ifCheckedQ8A4.setChecked(false);
+
+        ifCheckedQ9A1.setChecked(false);
+        ifCheckedQ9A2.setChecked(false);
+
+        ifCheckedQ10A1.setChecked(false);
+        ifCheckedQ10A2.setChecked(false);
+        ifCheckedQ10A3.setChecked(false);
+        ifCheckedQ10A4.setChecked(false);
+        ifCheckedQ10A5.setChecked(false);
+        ifCheckedQ10A6.setChecked(false);
+
     }
+
+    /**
+     * This method display all the correct answers when the Show Correct Answers button is clicked
+     */
+    public void showCorrectAnswers(View view){
+        ifCheckedQ1A1.setChecked(true);
+        ifCheckedQ1A2.setChecked(false);
+        ifCheckedQ1A3.setChecked(false);
+        ifCheckedQ1A4.setChecked(true);
+
+        questionTwo.setText("Black");
+
+
+        ifCheckedQ3A2.setChecked(true);
+
+        ifCheckedQ4A3.setChecked(true);
+
+        questionFive.setText("Dots Per Inch");
+
+        ifCheckedQ6A2.setChecked(true);
+
+        ifCheckedQ7A2.setChecked(true);
+
+        ifCheckedQ8A3.setChecked(true);
+
+        ifCheckedQ9A1.setChecked(true);
+
+        ifCheckedQ10A1.setChecked(true);
+        ifCheckedQ10A2.setChecked(true);
+        ifCheckedQ10A3.setChecked(true);
+        ifCheckedQ10A4.setChecked(true);
+        ifCheckedQ10A5.setChecked(true);
+        ifCheckedQ10A6.setChecked(true);
+    }
+
+
 
 }
